@@ -49,3 +49,4 @@ void main()
   for (i = 1; i <= jmlProses; i++)
     printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, ukuranProses[i], flags[i], ukuranBlok[flags[i]], frag[i]);
 }
+printf("");

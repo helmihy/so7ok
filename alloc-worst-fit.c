@@ -8,20 +8,20 @@ void main()
   static int alokasiBlok[max], flags[max];
   // input dari pengguna
   printf("\nTeknik Alokasi Memori - Worst Fit");
-  printf("\nMasukkan jumlah blok memori:");
+  printf("\nMasukkan jumlah blok memori: ");
   scanf("%d", &jmlBlok);
-  printf("Masukkan jumlah proses:");
+  printf("Masukkan jumlah proses: ");
   scanf("%d", &jmlProses);
   printf("\nMasukkan ukuran blok memori:-\n");
   for (i = 1; i <= jmlBlok; i++)
   {
-    printf("Blok %d:", i);
+    printf("Blok %d: ", i);
     scanf("%d", &ukuranBlok[i]);
   }
   printf("Masukkan ukuran proses :-\n");
   for (i = 1; i <= jmlProses; i++)
   {
-    printf("Proses %d:", i);
+    printf("Proses %d: ", i);
     scanf("%d", &ukuranProses[i]);
   }
   for (i = 1; i <= jmlProses; i++)
@@ -49,4 +49,5 @@ void main()
   printf("\nNo. Proses:\tUkuran Proses :\tAlokasi Blok:\tUkuran Blok:\tFragment");
   for (i = 1; i <= jmlProses; i++)
     printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, ukuranProses[i], flags[i], ukuranBlok[flags[i]], frag[i]);
+printf("\n");
 }

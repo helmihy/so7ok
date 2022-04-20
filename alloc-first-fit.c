@@ -12,13 +12,13 @@ void main()
   scanf("%d", &jmlBlok);
   printf("Masukkan jumlah proses: ");
   scanf("%d", &jmlProses);
-  printf("\nMasukkan ukuran blok memori: -\n");
+  printf("\nMasukkan ukuran blok memori:-\n");
   for (i = 1; i <= jmlBlok; i++)
   {
     printf("Blok %d: ", i);
     scanf("%d", &ukuranBlok[i]);
   }
-  printf("Masukkan ukuran proses : -\n");
+  printf("Masukkan ukuran proses :-\n");
   for (i = 1; i <= jmlProses; i++)
   {
     printf("Proses %d : ", i);

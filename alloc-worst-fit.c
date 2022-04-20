@@ -4,8 +4,7 @@
 void main()
 {
   // set setiap variabel yang dibutuhkan
-  int frag[max], ukuranBlok[max], ukuranProses[max], i, j,
-      jmlBlok, jmlProses, temp, highest = 0;
+  int frag[max], ukuranBlok[max], ukuranProses[max], i, j, jmlBlok, jmlProses, temp, highest = 0;
   static int alokasiBlok[max], flags[max];
   // input dari pengguna
   printf("\nTeknik Alokasi Memori - Worst Fit");
@@ -47,9 +46,7 @@ void main()
     highest = 0;
   }
   // tampilan output
- printf("\nNo. Proses:\tUkuran Proses :\tAlokasi Blok:\t
- Ukuran Blok:\tFragment");
- for(i=1;i<=jmlProses;i++)
- printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d",i,ukuranProses[i],flags[i],
- ukuranBlok[flags[i]],frag[i]);
+  printf("\nNo. Proses:\tUkuran Proses :\tAlokasi Blok:\tUkuran Blok:\tFragment");
+  for (i = 1; i <= jmlProses; i++)
+    printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, ukuranProses[i], flags[i], ukuranBlok[flags[i]], frag[i]);
 }
